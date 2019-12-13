@@ -1,1 +1,42 @@
 // Navigation Styles here
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border-bottom:dashed @navigation-border;
+    @media screen and (max-width:500px) {
+        flex-direction:column;
+        text-align:center;
+
+
+    }
+
+   
+                h1{
+                    flex:1;
+                    font-size:3rem;
+
+                    @media screen and  (max-width:1300px) and (min-width:700px)
+                    and (max-height:1300px) and (min-height:700px){
+                        font-size: 4rem;
+                    }
+                }
+                nav{
+
+                    @media screen and (max-width:500px){
+                        font-size:1.2rem;
+                        font-weight:bolder;
+                    }
+
+                    @media screen and  (max-width:1300px) and (min-width:700px)
+                    and (max-height:1300px) and (min-height:700px){
+                        font-size:1.8rem;
+                        justify-content:space-around;
+                    }   
+                    flex:1;
+                    display:flex;
+                    justify-content:space-between;
+                    
+                }
+}
+
